@@ -13,6 +13,7 @@ import { NavbarComponent } from './message/shared/navbar/navbar.component';
 import { MessagesComponent } from './message/messages/messages.component';
 import { AllInOneComponent } from './message/all-in-one/all-in-one.component';
 import { WelcomeComponent} from './welcome/welcome.component';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WelcomeComponent} from './welcome/welcome.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
-    MomentModule, AppRoutingModule
+    MomentModule, AppRoutingModule,
+    NgbModule
   ],
   providers: [
     MessageService
